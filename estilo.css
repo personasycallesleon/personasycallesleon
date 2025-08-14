@@ -1,0 +1,234 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  padding-top: 60px; /* para que no tape el menú */
+  background-color: #ece8de; /* Color de fondo */
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #333;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 2em;
+}
+
+details {
+  margin-bottom: 1em;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+/* Estilo para párrafos */
+p {
+  text-align: justify;
+  margin-bottom: 1em;     /* Espacio entre párrafos */
+  margin-left: 1em;       /* Sangría izquierda */
+  margin-right: 1em;      /* Sangría derecha */
+  
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#buscador {
+  display: block;
+  margin: 2em auto;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.intro {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 2em;
+  padding: 0 1em;
+}
+
+.imagen-titulo {
+  display: block;
+  margin: 2em auto 1em auto;
+  max-width: 50%;
+  height: auto;
+}
+
+h1 {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center; /* opcional, si querés que quede centrado */
+}
+
+summary {
+  color: #702424;
+}
+
+.presentacion {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.presentacion h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.presentacion h2 {
+  font-size: 1.2em;
+  color: #444;
+  font-weight: normal;
+}
+
+.autor-con-foto {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.autor-con-foto img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.texto-autor {
+  flex: 1;
+}
+
+.texto-autor p {
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+
+.agradecimientos, .bibliografia {
+  margin-top: 2em;
+}
+
+.agradecimientos h2, .bibliografia h2 {
+  margin-bottom: 0.5em;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+  .autor-con-foto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .autor-con-foto p {
+    text-align: justify;
+  }
+}
+
+/* Nombre del autor destacado */
+.nombre-autor {
+  font-weight: bold;
+  color: #702424;
+}
+
+/* Títulos de secciones finales */
+.seccion-titulo {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #702424;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+/* Listas */
+ul {
+  margin-left: 2em;
+  margin-bottom: 1.5em;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+.contacto-autor {
+  background-color: #f5f2ef;
+  border-left: 5px solid #702424;
+  padding: 1.5em;
+  margin: 2em 0;
+}
+
+.contacto-autor h2 {
+  color: #702424;
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+.contacto-autor p {
+  margin-bottom: 0.8em;
+  text-align: justify;
+}
+
+.contacto-autor .email a {
+  font-weight: bold;
+  color: #702424;
+  text-decoration: none;
+}
+
+.contacto-autor .email a:hover {
+  text-decoration: underline;
+}
+
+.separador {
+  border: none;
+  height: 2px;
+  background-color: #702424; /* tu color favorito */
+  margin: 2em 0; /* espacio arriba y abajo */
+}
+
+/* Estilo para el correo en Contacto */
+p strong + span,
+p strong + em {
+  color: #702424; /* nuestro color favorito */
+  font-weight: bold;
+}
