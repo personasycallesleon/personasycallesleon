@@ -90,9 +90,18 @@ p {
 .imagen-titulo {
   display: block;
   margin: 2em auto 1em auto;
-  max-width: 50%;
+  max-width: 50%;   /* ancho en PC */
+  width: 100%;      /* asegura que nunca se salga de la pantalla */
   height: auto;
 }
+
+/* Para móviles */
+@media (max-width: 600px) {
+  .imagen-titulo {
+    max-width: 80%;   /* más grande en móviles */
+  }
+}
+
 
 h1 {
   margin-left: 1em;
@@ -231,4 +240,11 @@ p strong + span,
 p strong + em {
   color: #702424; /* nuestro color favorito */
   font-weight: bold;
+}
+
+.footer-discreto {
+    text-align: center;
+    font-size: 0.8em;
+    color: #702424; /* tu color favorito */
+    margin-top: 2em;
 }
