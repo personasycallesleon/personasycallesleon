@@ -106,7 +106,7 @@ p {
 h1 {
   margin-left: 1em;
   margin-right: 1em;
-  text-align: center; /* opcional, si querés que quede centrado */
+  text-align: center; /* opcional, para que quede centrado */
 }
 
 summary {
@@ -231,20 +231,20 @@ ul li {
 .separador {
   border: none;
   height: 2px;
-  background-color: #702424; /* tu color favorito */
+  background-color: #702424; /* color granate corporativo */
   margin: 2em 0; /* espacio arriba y abajo */
 }
 
 /* Estilo para el correo en Contacto */
 p strong + span,
 p strong + em {
-  color: #702424; /* nuestro color favorito */
+  color: #702424; /* granate */
   font-weight: bold;
 }
 
 .footer-discreto {
     text-align: center;
     font-size: 0.8em;
-    color: #702424; /* tu color favorito */
+    color: #702424; /* granate */
     margin-top: 2em;
 }
